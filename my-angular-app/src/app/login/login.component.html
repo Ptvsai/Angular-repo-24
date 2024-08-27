@@ -1,0 +1,17 @@
+<div class="login-page">
+  <form (ngSubmit)="submitLogin($event)" [formGroup]="loginForm">
+    <label>EmailId</label>
+    <input type="text" name="emailId" placeholder="Enter EmailId" autocomplete="off" aria-label="Enter emailId"
+      formControlName="emailId" />
+
+    <label>Password</label>
+    <input type="password" name="Password" placeholder="Enter Password" autocomplete="off" aria-label="Enter password"
+      formControlName="password" />
+
+    <button type="submit">Submit</button>
+  </form>
+  <p class="forgot-password">Forgot Password?</p>
+  <div class="signUp-class">
+    <a href="/registration">signUp</a>
+  </div>
+</div>

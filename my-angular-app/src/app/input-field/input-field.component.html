@@ -1,0 +1,5 @@
+<div class="from-group">
+  <label class="label" *ngIf="label">{{label}}</label>
+  <input [type]="type" [name]="name" [autocomplete]="autocomplete" [class]="customClass" [placeholder]="placeholder" [required]="true"
+  (input)="onInput($event)" [ariaLabel]="ariaLabel"/>
+</div>

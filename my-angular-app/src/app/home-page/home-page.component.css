@@ -1,0 +1,18 @@
+/* Mobile devices (portrait and landscape) */
+/* GreycliffCF-bold */
+@media only screen and (max-width: 767px) {
+
+
+}
+
+/* Tablets (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Tablet-specific styles */
+
+}
+
+/* Desktops and large screens */
+@media only screen and (min-width: 1025px) {
+  /* Desktop-specific styles */
+
+}
