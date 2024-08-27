@@ -1,0 +1,50 @@
+<div class="registrtion-class">
+
+    <div class="img-container">
+        <img src="'./../assets/images/my-logo.png" alt="company logo" />
+    </div>
+
+    <form [formGroup]="form" (ngSubmit)="registrationValues($event)" class="form-group">
+        <app-input-field 
+            label="Full Name"
+            type="text"
+            name="userName"
+            placeholder="Enter your full name"
+            required="true"
+            formControlName="userName"
+            autocomplete="off"
+            aria-label="Enter userName"
+        />
+            <app-input-field 
+            label="Email"
+            type="text"
+            name="emailId"
+            placeholder="Enter emailId"
+            required="true"
+            formControlName="emailId"
+            autocomplete="off"
+            aria-label="Enter emailId"
+        />
+            <app-input-field 
+            label="Password"
+            name="password"
+            type="password"
+            placeholder="Enter password"
+            required="true"
+            formControlName="password"
+            autocomplete="off"
+            aria-label="Enter password"
+        />
+            <app-input-field 
+            label="Confirm Password"
+            name="cpassword"
+            type="password"
+            placeholder="Enter confirm password"
+            required="true"
+            formControlName="cpassword"
+            autocomplete="off"
+            aria-label="Enter confirm password"
+        />
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
